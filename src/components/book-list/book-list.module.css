@@ -10,7 +10,7 @@
 	align-items: center;
 }
 .filerArea {
-	width: 50%;
+	width: 80%;
 	padding: 15px;
 	border: 2px solid #ddd;
 	margin-bottom: 15px;
@@ -28,6 +28,18 @@
 .selectedAuthor {
 	background-color: blue;
 	color: white;
+}
+
+.newBook {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.newBookInput {
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 2px;
 }
 
 @media (min-width: 900px) {
