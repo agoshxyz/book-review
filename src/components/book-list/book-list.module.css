@@ -1,1 +1,37 @@
 /* TASK 7 START */
+.booksContainer {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+}
+.filterContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.filerArea {
+	width: 50%;
+	padding: 15px;
+	border: 2px solid #ddd;
+	margin-bottom: 15px;
+}
+.filterMessage {
+	margin-bottom: 10px;
+}
+.filterButtons {
+	display: flex;
+}
+
+.filerButton {
+	margin: 2px;
+}
+.selectedAuthor {
+	background-color: blue;
+	color: white;
+}
+
+@media (min-width: 900px) {
+	.booksContainer {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

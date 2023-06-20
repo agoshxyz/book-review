@@ -19,10 +19,7 @@ export const BookItem = ({ book }) => {
 			</p>
 
 			{/* TASK 6 TIP: stars should be displayed conditionally */}
-			<p>
-				<strong>stars: </strong>
-				{isStarsHidden ? '' : book.stars}
-			</p>
+			<p>{!isStarsHidden && <strong>stars: {book.stars}</strong>}</p>
 
 			<button onClick={toggleStars}>{isStarsHidden ? 'show stars' : 'hide stars'}</button>
 		</div>
