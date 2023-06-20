@@ -1,6 +1,6 @@
 .navigation {
 	height: 100%;
-	/* cursor: pointer; */
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,6 +9,7 @@
 .navigationList {
 	padding: 0;
 	margin: 0;
+	display: flex;
 }
 
 .navigationItem {

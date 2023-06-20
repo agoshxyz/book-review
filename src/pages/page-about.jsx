@@ -1,7 +1,9 @@
-export const PageAbout = () => {
+const PageAbout = () => {
 	return (
 		<div>
 			<h1>PageAbout</h1>
 		</div>
 	)
 }
+
+export default PageAbout
