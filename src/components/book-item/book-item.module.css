@@ -1,0 +1,14 @@
+.wrapper {
+	padding: 15px;
+	border: 2px solid #ddd;
+}
+
+.bookName {
+	font-size: 22px;
+	margin-bottom: 18px;
+}
+
+.bookAuthor {
+	font-size: 20px;
+	margin-bottom: 18px;
+}

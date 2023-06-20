@@ -1,25 +1,30 @@
 // TASK 6 START
-
-export const BookItem = () => {
+import { useState } from 'react'
+import styles from './book-item.module.css'
+export const BookItem = ({ book }) => {
+	const [isStarsHidden, setIsStarsHidden] = useState(true)
+	const toggleStars = () => {
+		setIsStarsHidden(!isStarsHidden)
+	}
 	return (
-		<div>
-			<h3>
+		<div className={styles.wrapper}>
+			<h3 className={styles.bookName}>
 				<strong>name: </strong>
-				{/* book name here */}
+				{book.name}
 			</h3>
 
-			<p>
+			<p className={styles.bookAuthor}>
 				<strong>author: </strong>
-				{/* book author here */}
+				{book.author}
 			</p>
 
 			{/* TASK 6 TIP: stars should be displayed conditionally */}
 			<p>
 				<strong>stars: </strong>
-				{/* book stars here */}
+				{isStarsHidden ? '' : book.stars}
 			</p>
 
-			<button>...</button>
+			<button onClick={toggleStars}>{isStarsHidden ? 'show stars' : 'hide stars'}</button>
 		</div>
 	)
 }
